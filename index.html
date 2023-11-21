@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Select</title>
+    <style>
+    body {
+        position: absolute;
+        text-align: center;
+        background-color: #a7a4b2;
+      }
+      #overlay {
+        /*   background-color: blue; */
+        position: relative;
+        left: 8px;
+        z-index: 1;
+        height: 500px;
+      }
+      #content {
+        /*   border: 5px solid red; */
+        background-image: contain;
+        height: 500px;
+        left: 8px;
+        z-index: -1;
+        text-align: center;
+        background-color: #c8c6d0;
+        position: absolute;
+      }
+      </style>
+</head>
+<body>
+    <container id="overlay">
+        <img id="overlay" src="https://drive.google.com/uc?export=download&id=1SzdHlTez4YMoxrgW_XVi_havN48cJSmu" width="500" height"500" alt="" />
+        <container id="content">
+          <audio id="chibi-audio"></audio>
+          <img src="" width="500" height="500" id="chibi-image" alt="chibi-select-image" />
+      
+          </br>
+      
+          <select name="image-choice" id="image-select">
+            <option value="" disabled selected>Select an image</option>
+            <option value="satoru-gojo1"> Satoru Gojo Mask </option>
+            <option value="satoru-gojo2"> Satoru Gojo Maskless </option>
+            <option value="satoru-gojo3"> Satoru Gojo HighSchool </option>
+            <option value="suguru-geto1"> Suguru Geto HighSchool </option>
+            <option value="suguru-geto2"> Suguru Geto Villian </option>
+      
+          </select>
+      
+        </container>
+      </container>
+    <script>const imageSelect = document.getElementById("image-select");
+        const chibiImg = document.getElementById("chibi-image");
+        const chibiAudio = document.getElementById("chibi-audio");
+        
+        const chibiSelectSrc =
+          "https://drive.google.com/uc?export=download&id=1X_pTub3kuIfoYEsx3jCXvXGqCesXrdNL";
+        
+        const gojo1Src =
+          "https://drive.google.com/uc?export=view&id=1T1wzYsJ6axpWyyQAWD4mdly67iX79JX4";
+        const crackAudio =
+          "https://drive.google.com/uc?export=view&id=1Qn0-FYkwo5Bcnt6b7dAvuX4xuGT3cmay";
+        
+        const gojo2Src =
+          "https://drive.google.com/uc?export=view&id=1Si9lylHu-lbJU2tYLDiVk4mKJSLg5HRD";
+        const rizzAudio =
+          "https://drive.google.com/uc?export=view&id=1on0C5aSWnizH-4EaLG0YqmTbY84ao4H3";
+        
+        const gojo3Src =
+          "https://drive.google.com/uc?export=view&id=1TEMwxhT7AXk5gh_O6NimhKBl_qTIqHQc";
+        const wowwAudio =
+          "https://drive.google.com/uc?export=view&id=1VS3gWZzesO2F19Y4ekAKDhXhNwUxxvUR";
+        
+        const geto1Src =
+          "https://drive.google.com/uc?export=view&id=1Sniw0zPADoLijDoxU4eEEzZTFBrZ35_h";
+        const awwAudio =
+          "https://drive.google.com/uc?export=view&id=1jVrU5jSewFvJQgvxoYC61RZco-WOuMLm";
+        
+        const geto2Src =
+          "https://drive.google.com/uc?export=view&id=1Sm1FaP13A9luf6MVIsn339Hr9A8nQv4s";
+        const metalAudio =
+          "https://drive.google.com/uc?export=view&id=1G_WFVv6dIKRdGwxVU53oraJ_6Zqm3Rif";
+        
+        chibiImg.src = chibiSelectSrc;
+        
+        imageSelect.addEventListener("change", function () {
+          console.log(this.value);
+          if (this.value === "suguru-geto1") {
+            chibiImg.src = geto1Src;
+            chibiAudio.src = awwAudio;
+            chibiAudio.play();
+          } else if (this.value === "suguru-geto2") {
+            chibiImg.src = geto2Src;
+            chibiAudio.src = metalAudio;
+            chibiAudio.play();
+          } else if (this.value === "satoru-gojo1") {
+            chibiImg.src = gojo1Src;
+            chibiAudio.src = crackAudio;
+            chibiAudio.play();
+          } else if (this.value === "satoru-gojo2") {
+            chibiImg.src = gojo2Src;
+            chibiAudio.src = rizzAudio;
+            chibiAudio.play();
+          } else if (this.value === "satoru-gojo3") {
+            chibiImg.src = gojo3Src;
+            chibiAudio.src = wowwAudio;
+            chibiAudio.play();
+          }
+        });
+        </script>
+    
+</body>
+</html>
