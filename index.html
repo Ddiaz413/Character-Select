@@ -31,7 +31,7 @@
 </head>
 <body>
     <container id="overlay">
-        <img id="overlay" src="https://drive.google.com/uc?export=download&id=1SzdHlTez4YMoxrgW_XVi_havN48cJSmu" width="500" height"500" alt="" />
+        <img id="overlay" src="https://64.media.tumblr.com/6a664550dffe75e13b57fd8fce4a57a3/f91c60cee663d135-70/s1280x1920/d6ef4c50cba2fc66c2cd74fb93ac54f41807c59e.pnj" width="500" height"500" alt="" />
         <container id="content">
           <audio id="chibi-audio"></audio>
           <img src="" width="500" height="500" id="chibi-image" alt="chibi-select-image" />
@@ -50,64 +50,68 @@
       
         </container>
       </container>
-    <script>const imageSelect = document.getElementById("image-select");
-        const chibiImg = document.getElementById("chibi-image");
-        const chibiAudio = document.getElementById("chibi-audio");
-        
-        const chibiSelectSrc =
-          "https://drive.google.com/uc?export=download&id=1X_pTub3kuIfoYEsx3jCXvXGqCesXrdNL";
-        
-        const gojo1Src =
-          "https://drive.google.com/uc?export=view&id=1T1wzYsJ6axpWyyQAWD4mdly67iX79JX4";
-        const crackAudio =
-          "https://drive.google.com/uc?export=view&id=1Qn0-FYkwo5Bcnt6b7dAvuX4xuGT3cmay";
-        
-        const gojo2Src =
-          "https://drive.google.com/uc?export=view&id=1Si9lylHu-lbJU2tYLDiVk4mKJSLg5HRD";
-        const rizzAudio =
-          "https://drive.google.com/uc?export=view&id=1on0C5aSWnizH-4EaLG0YqmTbY84ao4H3";
-        
-        const gojo3Src =
-          "https://drive.google.com/uc?export=view&id=1TEMwxhT7AXk5gh_O6NimhKBl_qTIqHQc";
-        const wowwAudio =
-          "https://drive.google.com/uc?export=view&id=1VS3gWZzesO2F19Y4ekAKDhXhNwUxxvUR";
-        
-        const geto1Src =
-          "https://drive.google.com/uc?export=view&id=1Sniw0zPADoLijDoxU4eEEzZTFBrZ35_h";
-        const awwAudio =
-          "https://drive.google.com/uc?export=view&id=1jVrU5jSewFvJQgvxoYC61RZco-WOuMLm";
-        
-        const geto2Src =
-          "https://drive.google.com/uc?export=view&id=1Sm1FaP13A9luf6MVIsn339Hr9A8nQv4s";
-        const metalAudio =
-          "https://drive.google.com/uc?export=view&id=1G_WFVv6dIKRdGwxVU53oraJ_6Zqm3Rif";
-        
-        chibiImg.src = chibiSelectSrc;
-        
-        imageSelect.addEventListener("change", function () {
-          console.log(this.value);
-          if (this.value === "suguru-geto1") {
-            chibiImg.src = geto1Src;
-            chibiAudio.src = awwAudio;
-            chibiAudio.play();
-          } else if (this.value === "suguru-geto2") {
-            chibiImg.src = geto2Src;
-            chibiAudio.src = metalAudio;
-            chibiAudio.play();
-          } else if (this.value === "satoru-gojo1") {
-            chibiImg.src = gojo1Src;
-            chibiAudio.src = crackAudio;
-            chibiAudio.play();
-          } else if (this.value === "satoru-gojo2") {
-            chibiImg.src = gojo2Src;
-            chibiAudio.src = rizzAudio;
-            chibiAudio.play();
-          } else if (this.value === "satoru-gojo3") {
-            chibiImg.src = gojo3Src;
-            chibiAudio.src = wowwAudio;
-            chibiAudio.play();
-          }
-        });
+    <script>
+        const imageSelect = document.getElementById("image-select");
+const chibiImg = document.getElementById("chibi-image");
+const chibiAudio = document.getElementById("chibi-audio");
+
+/* make the images into consts*/
+const chibiSelectSrc =
+  "https://64.media.tumblr.com/5b43a74de929d2063f8bc7b964c58198/f91c60cee663d135-66/s1280x1920/9dba27b1f233a55aecc6cd80ca17b0ae8d8db9c1.pnj";
+
+const gojo1Src =
+  "https://64.media.tumblr.com/291fdc8bfaac80791e2bd7a872f09eb5/f91c60cee663d135-01/s500x750/8ad6a5c2112c253f916fca8cf1185efce65997ab.pnj";
+const crackAudio =
+  "https://drive.google.com/uc?export=view&id=1Qn0-FYkwo5Bcnt6b7dAvuX4xuGT3c";
+
+const gojo2Src =
+  "https://64.media.tumblr.com/26ac5fcdefdb4425422edbe01dafcc97/f91c60cee663d135-09/s500x750/967f55b4aa87422f8bb671f58d92015a49f7b39c.pnj";
+const rizzAudio =
+  "https://drive.google.com/uc?export=view&id=1on0C5aSWnizH-4EaLG0YqmTbY84ao4H3";
+
+const gojo3Src =
+  "https://64.media.tumblr.com/afd69be6de52f0cf601d88f6eee027bf/f91c60cee663d135-78/s500x750/a40cbd0bab3f940ded746cf4a37c773a329a7ca8.pnj";
+const wowwAudio =
+  "https://drive.google.com/uc?export=view&id=1VS3gWZzesO2F19Y4ekAKDhXhNwUxxvUR";
+
+const geto1Src =
+  "https://64.media.tumblr.com/a190b297ff98cc2281be9e00ee5b276c/f91c60cee663d135-a1/s1280x1920/5ac55eb1f06a4de0a81beaf2a442869fd5893055.pnj";
+const awwAudio =
+  "https://drive.google.com/uc?export=view&id=1jVrU5jSewFvJQgvxoYC61RZco-WOuMLm";
+
+const geto2Src =
+  "https://64.media.tumblr.com/365876612d077dfede333971310f553d/f91c60cee663d135-90/s1280x1920/b4cc4d1130640738b22691fa88f3f129bf3b678c.pnj";
+const metalAudio =
+  "https://drive.google.com/uc?export=view&id=1G_WFVv6dIKRdGwxVU53oraJ_6Zqm3Rif";
+
+/* chibis replace selection image*/
+chibiImg.src = chibiSelectSrc;
+
+imageSelect.addEventListener("change", function () {
+  console.log(this.value);
+  if (this.value === "suguru-geto1") {
+    chibiImg.src = geto1Src;
+    chibiAudio.src = awwAudio;
+    chibiAudio.play();
+  } else if (this.value === "suguru-geto2") {
+    chibiImg.src = geto2Src;
+    chibiAudio.src = metalAudio;
+    chibiAudio.play();
+  } else if (this.value === "satoru-gojo1") {
+    chibiImg.src = gojo1Src;
+    chibiAudio.src = crackAudio;
+    chibiAudio.play();
+  } else if (this.value === "satoru-gojo2") {
+    chibiImg.src = gojo2Src;
+    chibiAudio.src = rizzAudio;
+    chibiAudio.play();
+  } else if (this.value === "satoru-gojo3") {
+    chibiImg.src = gojo3Src;
+    chibiAudio.src = wowwAudio;
+    chibiAudio.play();
+  }
+});
+
         </script>
     
 </body>
